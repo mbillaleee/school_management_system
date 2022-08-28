@@ -17,12 +17,12 @@
                 @endif
                 <form action="{{ url('update/class/post') }}" class="form" method="post">
                     @csrf
-                    <h4>Student Class add</h4>
+                    <h4>Student Class Information Updae</h4>
                     <div class="row">
-                         <div class="col-lg-2"></div>
+                         <div class="col-lg-1"></div>
                         <div class="col-lg-10">
                             <div class="form-group">
-                                <label for="">Class * </label>
+                                <label for="">Class * </label><br>
                                 <div class="form-check-inline col-lg-10">
                                     <input type="hidden" name="class_id" value="{{ $class_id }}">
                                     <input type="text" class="form-control" name="class_name" value="{{ $class_name }}" placeholder="Enter Class">

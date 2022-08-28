@@ -27,15 +27,15 @@
                 @endif
                 <form action="{{ url('add/subject/post') }}" class="form" method="post">
                     @csrf
-                    <h4>Student Class add</h4>
+                    <h4>Subject Information add</h4>
                     <div class="row">
-                         <div class="col-lg-2"></div>
+                         <div class="col-lg-1"></div>
                         <div class="col-lg-10">
 
                            
                            
                             <div class="form-group">
-                                <label for="">Subject Name * </label>
+                                <label for="">Subject Name * </label><br>
                                 <div class="form-check-inline col-lg-10">
                                     <input type="text" class="form-control" name="subject_name" value="" placeholder="Enter subject">
                                 </div>
@@ -54,11 +54,10 @@
         </div>
         <div class="card mt-5">
             <div>
-                <div class="card-header">
-                <h3>Student</h3>
+                <div class="card-header"></div>
             </div>
             <div class="card-body">
-                <h4>Student Information show</h4>
+                <h4>Subject Information show</h4>
                 <div class="row">
                     <div class="col-lg-10">
                         <table class="table" id="myTable">

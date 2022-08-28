@@ -17,9 +17,9 @@
             	@endif
                 <form action="{{ url('update/student/post') }}" class="form" method="post" enctype="multipart/form-data">
                     @csrf
-                    <h4>Student Information add</h4>
+                    <h4>Student Information update</h4>
                     <div class="row">
-                         <div class="col-lg-2"></div>
+                         <div class="col-lg-1"></div>
                         <div class="col-lg-10">
                             <div class="form-group">
                                 <label for="">Name  </label><br>

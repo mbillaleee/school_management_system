@@ -17,7 +17,7 @@
             	@endif
                 <form action="{{ url('add/mark/post') }}" class="form" method="post" enctype="multipart/form-data">
                     @csrf
-                    <h4>Student Information add</h4>
+                    <h4>Student Mark Information add</h4>
                     <div class="row">
                          <div class="col-lg-1"></div>
                         <div class="col-lg-10">
@@ -79,10 +79,9 @@
         <div class="card mt-5">
             <div>
                 <div class="card-header">
-                <h3>Student</h3>
             </div>
             <div class="card-body">
-                <h4>Student Information show</h4>
+                <h4>Student Mark Information show</h4>
                 <div class="row">
                     <div class="col-lg-10">
                         <table class="table" id="myTable">

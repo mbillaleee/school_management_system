@@ -27,12 +27,12 @@
                 @endif
                 <form action="{{ url('add/class/post') }}" class="form" method="post">
                     @csrf
-                    <h4>Student Class add</h4>
+                    <h4>Student Class Information add</h4>
                     <div class="row">
-                         <div class="col-lg-2"></div>
+                         <div class="col-lg-1"></div>
                         <div class="col-lg-10">
                             <div class="form-group">
-                                <label for="">Class * </label>
+                                <label for="">Class * </label><br>
                                 <div class="form-check-inline col-lg-10">
                                     <input type="text" class="form-control" name="class_name" value="" placeholder="Enter Class">
                                 </div>
@@ -52,10 +52,9 @@
         <div class="card mt-5">
             <div>
                 <div class="card-header">
-                <h3>Student</h3>
             </div>
             <div class="card-body">
-                <h4>Student Information show</h4>
+                <h4>Student Class Information show</h4>
                 <div class="row">
                     <div class="col-lg-10">
                         <table class="table" id="myTable">
