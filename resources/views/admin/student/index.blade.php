@@ -1,6 +1,7 @@
 @extends('layouts.app');
 
 @section('content')
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="card">
@@ -158,4 +159,9 @@
         </div>
     </div>
 </div>
+<script>
+    $(document).ready( function () {
+    $('#myTable').DataTable();
+} );
+</script>
 @endsection

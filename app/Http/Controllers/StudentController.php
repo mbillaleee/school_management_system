@@ -75,10 +75,10 @@ class StudentController extends Controller
         $student_email =  Student::find($student_id)->email;
         $student_present_address =  Student::find($student_id)->present_address;
         $student_permanent_address =  Student::find($student_id)->permanent_address;
-        $student_current_class =  Student::find($student_id)->current_class;
+        $current_class =  Student::find($student_id)->current_class;
 
         $studentclasses = Studentclass::all();
-    	return view('admin.student.update', compact('student_name', 'student_id', 'student_image', 'student_mobile', 'student_email', 'student_present_address', 'student_permanent_address', 'student_current_class', 'studentclasses'));
+    	return view('admin.student.update', compact('student_name', 'student_id', 'student_image', 'student_mobile', 'student_email', 'student_present_address', 'student_permanent_address', 'current_class', 'studentclasses'));
     }
 
     function updatestudentpost(Request $request){

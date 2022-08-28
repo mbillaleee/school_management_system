@@ -94,10 +94,10 @@
 
                             <div class="form-group">
                                 <label class="form-label">Class</label><br>
-                                <select class="form-control" name="student_current_class" id="" value="{{ $student_current_class }}">
+                                <select class="form-control" name="current_class" id="">
                                     <option value="">--select one--</option>
                                     @foreach($studentclasses as $studentclass)
-                                        <option value="{{ $studentclass->student_current_class }}">{{ $studentclass->student_current_class }}</option>
+                                        <option value="{{ $studentclass->id }}" {{$studentclass->id == $studentclass->id  ? 'selected' : ''}}>{{ $studentclass->class_name }}</option>
                                     @endforeach
                                 </select>
                                  @error('current_class')

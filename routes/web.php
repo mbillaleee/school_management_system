@@ -36,11 +36,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 // Route::post('/supplierPost/{id}', [supplierController::class, 'supplierPost'])->name('supplierPostUpdate');
 
 
-Route::get('/class', [StudentClassController::class, 'showData']);
-
-
-
-
 Route::get('/add/student', [StudentController::class, 'addstudent']);
 Route::post('/add/student/post', [StudentController::class, 'addstudentpost']);
 Route::get('/update/student/{student_id}', [StudentController::class, 'updatestudent']);
